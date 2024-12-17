@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 
 from flask import Flask, render_template
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
+
+# Load environment variables [eg. os.getenv('SECRET_KEY')]
+load_dotenv()
 
 # Routes
 @app.route('/')
