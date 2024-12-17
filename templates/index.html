@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="text-center">
+        <h1>Welcome to the Home Page</h1>
+        <p>This is a simple Flask app with Bootstrap and FontAwesome integrated.</p>
+        <a href="{{ url_for('page') }}" class="btn btn-primary">
+            Go to Page <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+{% endblock %}
